@@ -67,9 +67,12 @@ playButton.addEventListener('click', function(){
 
 /* Logica */
 /*
-- Creo una funzione che genera random 16 numeri interi positivi
-- Li salvo in una variabile arrey
-- 
+- Creo un arrey contenitore
+- Apro un ciclo while
+- Metto come limite 16 del ciclo e lo faccio partire da 1, altrimenti mi da 17 risultati.
+- Metto il generatore di numeri random all'interno di una variabile
+- Paragono con un IF se i numeri estratti sono già presenti
+- Se non sono presenti pusho i numeri all'interno dell'arrey.
 */
 
 
@@ -84,8 +87,9 @@ while (randomBombArr.length < 16) {
     }
 
     
-    console.log(randomBombArr);
 }
+
+console.log(randomBombArr);
 
 
 
