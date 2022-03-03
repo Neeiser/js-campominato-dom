@@ -72,9 +72,16 @@ playButton.addEventListener('click', function(){
 - 
 */
 
-function randomBombNumber (min, max) {
+const bombStorage = 16;
+const randomBombGenerator = []
+for (let i = 1; i <= bombStorage; i++) {
     
+    if ()
+    randomBombGenerator.push(Math.floor(Math.random() * 16)+1);
+
+    console.log(randomBombGenerator);
 }
+
 
 
 
