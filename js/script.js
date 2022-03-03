@@ -85,8 +85,7 @@ while (randomBombArr.length < 16) {
     if (randomBombArr.includes(randomBombNumber) == false) { /* Se è falso che il numero estratto è incluso nell'arrey allora... */
         randomBombArr.push(randomBombNumber); /*... procedi aggiungendo il numero nell'arrey*/
     }
-
-    
+    console.log(randomBombArr, randomBombNumber);
 }
 
 console.log(randomBombArr);
