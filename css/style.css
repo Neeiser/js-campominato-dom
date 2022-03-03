@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+----------------------------------------------------------------
+--------------------------HEADER--------------------------------
+----------------------------------------------------------------
+ */
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-left,
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-left img{
+    height: 50px;
+}
+
+.header-right label{
+    font-size: 1.2rem;
+}
+
+.header-right select{
+    margin: 0 20px;
+    padding: 5px 50px 5px 5px;
+    border-radius: 5px;
+}
+
+.header-right button{
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.header-right button:hover{
+    filter: brightness(95%);
+}
+
+.header-right button:active{
+    background-color: #c2c2c2;
+}
+
+
+/*
+----------------------------------------------------------------
+-------------------------MAIN-----------------------------------
+----------------------------------------------------------------
+*/
+
+main {
+    height: 800px;
+    background-color: #075169;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container{
+    width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes{
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
