@@ -79,8 +79,8 @@ let i = 1;
 while (randomBombArr.length < 16) {
     let randomBombNumber = Math.floor(Math.random() * 16) + 1;
 
-    if (randomBombArr.includes(randomBombNumber) == false) {
-        randomBombArr.push(randomBombNumber);
+    if (randomBombArr.includes(randomBombNumber) == false) { /* Se è falso che il numero estratto è incluso nell'arrey allora... */
+        randomBombArr.push(randomBombNumber); /*... procedi aggiungendo il numero nell'arrey*/
     }
 
     
