@@ -66,6 +66,13 @@ playButton.addEventListener('click', function(){
 
 
 /* Logica */
+
+/* 
+Il computer deve generare 16 numeri casuali nello stesso 
+range della difficoltà prescelta: le bombe.
+I numeri nella lista delle bombe non possono essere duplicati. 
+*/
+
 /*
 - Creo un arrey contenitore
 - Apro un ciclo while
@@ -95,11 +102,7 @@ console.log(randomBombArr);
 
 
 
-/* 
-Il computer deve generare 16 numeri casuali nello stesso 
-range della difficoltà prescelta: le bombe.
-I numeri nella lista delle bombe non possono essere duplicati. 
-*/
+
 
 /* 
 In seguito l'utente clicca su una cella: 
@@ -111,9 +114,4 @@ La partita termina quando il giocatore clicca su una bomba
 o raggiunge il numero massimo possibile di numeri consentiti.
 Al termine della partita il software deve comunicare il punteggio, 
 cioè il numero di volte che l’utente ha cliccato su una cella che non era una b. 
-*/
-
-/* 
-reminder 
-- ARREY: .include per i duplicati
 */
