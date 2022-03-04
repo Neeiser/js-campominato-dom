@@ -84,3 +84,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+.boxes.selected{
+    background-color: #66d9ff;
+}

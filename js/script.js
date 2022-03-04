@@ -31,10 +31,11 @@ playButton.addEventListener('click', function(){
         boxContainer.style.width = '760px'; /* RESIZE */
 
         for (i = 1; i <= 100; i++) {
-            const element = document.createElement('div');
-            element.classList.add('boxes');
-            element.innerHTML = i;
-            boxContainer.append(element);
+            const jsBox = document.createElement('div');
+            jsBox.classList.add('boxes');
+            jsBox.innerHTML = i;
+            jsBox.addEventListener('click', changeCellColor);
+            boxContainer.append(jsBox);
         }
     } else if (modeSelecter.value == 'normal'){
 
@@ -42,10 +43,10 @@ playButton.addEventListener('click', function(){
         boxContainer.style.width = '690px'; /* RESIZE */
 
         for (i = 1; i <= 81; i++) {
-            const element = document.createElement('div');
-            element.classList.add('boxes');
-            element.innerHTML = i;
-            boxContainer.append(element);
+            const jsBox = document.createElement('div');
+            jsBox.classList.add('boxes');
+            jsBox.innerHTML = i;
+            boxContainer.append(jsBox);
         }
     } else {
 
@@ -53,13 +54,19 @@ playButton.addEventListener('click', function(){
         boxContainer.style.width = '550px'; /* RESIZE */
 
         for (i = 1; i <= 49; i++) {
-            const element = document.createElement('div');
-            element.classList.add('boxes');
-            element.innerHTML = i;
-            boxContainer.append(element);
+            const jsBox = document.createElement('div');
+            jsBox.classList.add('boxes');
+            jsBox.innerHTML = i;
+            boxContainer.append(jsBox);
         }
     }
 });
+
+function changeCellColor(event) {
+
+	this.classList.add('selected');
+	
+}
 
 /* 
 PANICO!
@@ -72,11 +79,11 @@ Considerazioni:
 3) Dovrei scoprire una qualche funzione...
 */
 
-const box = document.getElementsByClassName('boxes');
+/* const box = document.getElementsByClassName('boxes');
 
 box.addEventListener('click', function(){
     console.log('Clicked!')
-});
+}); */
 
 
 
@@ -136,18 +143,18 @@ console.log(randomBombArrNormal);
 EASY RANDOM 
 */
 
-const randomBombArreEasy = []
+const randomBombArrEasy = []
 
-while (randomBombArrNormal.length < 16) {
+while (randomBombArrEasy.length < 16) {
     let randomBombNumber = Math.floor(Math.random() * 49) + 1;
 
-    if (randomBombArrNormal.includes(randomBombNumber) == false) { 
-        randomBombArrNormal.push(randomBombNumber);
+    if (randomBombArrEasy.includes(randomBombNumber) == false) { 
+        randomBombArrEasy.push(randomBombNumber);
     }
-    console.log(randomBombArrNormal, randomBombNumber);
+    console.log(randomBombArrEasy, randomBombNumber);
 }
 
-console.log(randomBombArrNormal);
+console.log(randomBombArrEasy);
 
 
 
