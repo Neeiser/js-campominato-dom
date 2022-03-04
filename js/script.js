@@ -72,6 +72,12 @@ Considerazioni:
 3) Dovrei scoprire una qualche funzione...
 */
 
+const box = document.getElementsByClassName('boxes');
+
+box.addEventListener('click', function(){
+    console.log('Clicked!')
+});
+
 
 
 
