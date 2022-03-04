@@ -17,9 +17,6 @@ const playButton = document.getElementById('play-btn');
 
 const boxContainer = document.querySelector('.box-container');
 
-
-
-
 /*
 -----------
 Event
@@ -82,25 +79,56 @@ I numeri nella lista delle bombe non possono essere duplicati.
 - Se non sono presenti pusho i numeri all'interno dell'arrey.
 */
 
+/* 
+HARD RANDOM 
+*/
 
-const randomBombArr = []
-let i = 1;
+const randomBombArrHard = []
 
-while (randomBombArr.length < 16) {
-    let randomBombNumber = Math.floor(Math.random() * 16) + 1;
+while (randomBombArrHard.length < 16) {
+    let randomBombNumber = Math.floor(Math.random() * 100) + 1;
 
-    if (randomBombArr.includes(randomBombNumber) == false) { /* Se è falso che il numero estratto è incluso nell'arrey allora... */
-        randomBombArr.push(randomBombNumber); /*... procedi aggiungendo il numero nell'arrey*/
+    if (randomBombArrHard.includes(randomBombNumber) == false) { 
+        randomBombArrHard.push(randomBombNumber);
     }
-    console.log(randomBombArr, randomBombNumber);
+    console.log(randomBombArrHard, randomBombNumber);
 }
 
-console.log(randomBombArr);
+console.log(randomBombArrHard);
 
+/* 
+NORMAL RANDOM 
+*/
 
+const randomBombArrNormal = []
 
+while (randomBombArrNormal.length < 16) {
+    let randomBombNumber = Math.floor(Math.random() * 81) + 1;
 
+    if (randomBombArrNormal.includes(randomBombNumber) == false) { 
+        randomBombArrNormal.push(randomBombNumber);
+    }
+    console.log(randomBombArrNormal, randomBombNumber);
+}
 
+console.log(randomBombArrNormal);
+
+/* 
+EASY RANDOM 
+*/
+
+const randomBombArreEasy = []
+
+while (randomBombArrNormal.length < 16) {
+    let randomBombNumber = Math.floor(Math.random() * 49) + 1;
+
+    if (randomBombArrNormal.includes(randomBombNumber) == false) { 
+        randomBombArrNormal.push(randomBombNumber);
+    }
+    console.log(randomBombArrNormal, randomBombNumber);
+}
+
+console.log(randomBombArrNormal);
 
 
 
@@ -115,3 +143,4 @@ o raggiunge il numero massimo possibile di numeri consentiti.
 Al termine della partita il software deve comunicare il punteggio, 
 cioè il numero di volte che l’utente ha cliccato su una cella che non era una b. 
 */
+
