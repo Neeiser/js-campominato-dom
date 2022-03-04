@@ -61,8 +61,21 @@ playButton.addEventListener('click', function(){
     }
 });
 
+/* 
+PANICO!
+MI SERVE BOXES MA NON RIESCO A RICHIAMARLO! SI TROVA QUA SOPRA MA NON SO 
+COME TIRARLO FUORI DA LI PER APPICCICARGLI L'EVENTLISTENER CLICK.
+Considerazioni:
+1) Ogni azione di richiamo diretta tipo quella che riporto qua sotto mi dice che:
+"non trovo l'elemento da selezionare"
+2) Chiaramente non lo trova all'inizio, non esiste al caricamento della pagina...
+3) Dovrei scoprire una qualche funzione...
+*/
 
-/* Logica */
+
+
+
+
 
 /* 
 Il computer deve generare 16 numeri casuali nello stesso 
