@@ -46,6 +46,7 @@ playButton.addEventListener('click', function(){
             const jsBox = document.createElement('div');
             jsBox.classList.add('boxes');
             jsBox.innerHTML = i;
+            jsBox.addEventListener('click', changeCellColor);
             boxContainer.append(jsBox);
         }
     } else {
@@ -57,6 +58,7 @@ playButton.addEventListener('click', function(){
             const jsBox = document.createElement('div');
             jsBox.classList.add('boxes');
             jsBox.innerHTML = i;
+            jsBox.addEventListener('click', changeCellColor);
             boxContainer.append(jsBox);
         }
     }
